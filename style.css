@@ -1,0 +1,80 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 50px;
+  background-color: #ff9a4b;
+}
+
+footer {
+  height: 50px;
+  background-color: #aaaaaa;
+}
+
+main {
+  width: 960px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.content {
+  width: 300px;
+  margin-right: 30px;
+  padding: 10px;
+  position: relative;
+  background-color: #eeeeee;
+}
+.content:last-child {
+  margin-right: 0;
+}
+
+.step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: #ffffff;
+}
+
+.title {
+  margin: 15px 0 5px;
+}
+
+
+
+.img1 {
+  height: 150px;
+  width: 280px;
+  background-image: url(img/flow01.png);
+  background-size: contain;
+}
+
+.img2 {
+  height: 150px;
+  width: 280px;
+  background-image: url(img/flow02.png);
+  background-size: contain;
+}
+
+.img3 {
+  height: 150px;
+  width: 280px;
+  background-image: url(img/flow03.png);
+  background-size: contain;
+}
+
+
+
+/* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
+@media screen and (max-width: 768px) {
+  main {
+  width: 100%;
+  margin: 50px auto;
+  display: block;
+  margin: 0 auto;
+  }
+}
