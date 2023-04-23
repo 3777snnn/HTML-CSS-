@@ -50,21 +50,21 @@ main {
   height: 150px;
   width: 280px;
   background-image: url(img/flow01.png);
-  background-size: contain;
+  background-size: 100% 100%;
 }
 
 .img2 {
   height: 150px;
   width: 280px;
   background-image: url(img/flow02.png);
-  background-size: contain;
+  background-size: 100% 100%;
 }
 
 .img3 {
   height: 150px;
   width: 280px;
   background-image: url(img/flow03.png);
-  background-size: contain;
+  background-size: 100% 100%;
 }
 
 
@@ -75,6 +75,23 @@ main {
   width: 100%;
   margin: 50px auto;
   display: block;
-  margin: 0 auto;
+  }
+  .content {
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  position: relative;
+  background-color: #eeeeee;
+  }
+  .content:last-child {
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  position: relative;
+  background-color: #eeeeee;
+  }
+  .img {
+    width:93%;
+    margin: auto auto;
   }
 }
